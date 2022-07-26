@@ -3,8 +3,9 @@
 
 ## 安装配置
 
-确保有node.js、python\n
-```pip install neovim```安装python扩展\n
+确保有node.js、python
+
+```pip install neovim```安装python扩展
 
 
 ##预览
