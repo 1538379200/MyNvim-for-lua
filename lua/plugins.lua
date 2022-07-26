@@ -26,18 +26,18 @@ return require('packer').startup(function()
 	    end
 	}
 	-- 文件标签页
-	use{'akinsho/bufferline.nvim',
-	  config = function()
-	    require("bufferline").setup{}
-	  end
-	}
+	-- use{'akinsho/bufferline.nvim',
+	--   config = function()
+	--     require("bufferline").setup{}
+	--   end
+	-- }
 
 	-- 状态栏
-	use{'windwp/windline.nvim',
-	  config = function()
-	    require('wlsample.basic')
-	  end
-	}
+	-- use{'windwp/windline.nvim',
+	--   config = function()
+	--     require('wlsample.basic')
+	--   end
+	-- }
 use {'vim-airline/vim-airline'}
 use {'vim-airline/vim-airline-themes'}
 use {'mhinz/vim-startify'}

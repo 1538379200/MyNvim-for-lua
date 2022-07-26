@@ -1,11 +1,28 @@
 lua << EOF
-require('baseConf')
 require('plugins')
 require('lsp')
 require('init_lspconfig')
 require('keymap')
 require('bufferline')
 EOF
+
+" ----------------------------nvim基础配置------------------------------------
+set nobackup
+set noswapfile
+set noundofile
+set backupdir=D:/VimTemp
+set number
+set relativenumber
+set mouse=a
+set shiftwidth=4
+set cursorline
+set cursorcolumn
+set showcmd
+set fileencoding='utf-8'
+set tabstop=4
+set autoread
+set termguicolors
+" set background = light
 
 " 设置颜色主题
 colorscheme gruvbox
