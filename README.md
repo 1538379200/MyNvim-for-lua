@@ -9,6 +9,7 @@ lua <<< EOF
 .
 .
 EOF
+```
 
 ## 配置windows terminal
 > 不要装在自带PowerShell中，会出现报错，不能消除
