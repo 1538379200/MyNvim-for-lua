@@ -64,3 +64,13 @@ EOF
 - ```Alt + [左右方向键]``` 切换标签
 - ```Alt + ↓``` 选择关闭标签
 
+## 正在使用插件
+
+- 标签、状态栏样式插件: [vim-airline](https://github.com/vim-airline/vim-airline)
+- 便捷安装lsp服务: [lsp-install](https://github.com/williamboman/nvim-lsp-installer)
+- 文件树目录: [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
+- 代码纠错提示插件: [lsp](https://github.com/neovim/nvim-lspconfig)
+- 包管理插件: [packer](https://github.com/wbthomason/packer.nvim)
+- vim可选包管理: [vim-plug](https://github.com/junegunn/vim-plug)
+
+
