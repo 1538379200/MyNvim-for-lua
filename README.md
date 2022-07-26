@@ -28,7 +28,7 @@ EOF
 - 如果放在Program Files (x86)可能会在写入的时候不能识别，如果在这里可以选择将下载的主题放在其他地方
 - 重新打开```notepad $profile```，输入```oh-my-posh init pwsh --config D:\TerminalThemes\M365Princess.omp.json | Invoke-Expression```，保存
 - 重启PowerShell即可显示
-- 在运行命令中，使用pwsh打开PowerShell 7程序
+- 在运行命令中，使用```pwsh```打开PowerShell 7程序
 
 ## 配置terminal字体
 - 在[Nerd Donts](https://www.nerdfonts.com/font-downloads)中下载喜欢的字体，这里使用的```meslo nerd font```
