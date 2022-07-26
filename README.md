@@ -5,7 +5,9 @@
 
 确保有node.js、python
 
-- []```pip install neovim```安装python扩展
+- ```pip install neovim```安装python扩展
+- 使用```npm i -g [language server]``` 为lsp安装语言服务器，也可以使用LspInstall安装
+- 进入nvim，```:PackerInstall```或者```:packerSync```安装更新全部插件
 
 
 ##预览
