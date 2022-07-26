@@ -57,7 +57,7 @@ EOF
 ![image](https://user-images.githubusercontent.com/42434762/180963299-4c2c5e42-e6c9-4668-970b-4ad3f977ac47.png)
 
 ## 键位操作
-> 键位映射操作可以在```lua/keymap.lua```中进行修改
+> 键位映射操作可以在```lua/keymap.lua```/```init.vim```中进行修改
 
 - ```ctrl + n``` 可以打开/关闭文件树
 - ```crtl + w + w```/```ctrl + w + [方向键]``` 切换窗口
