@@ -29,7 +29,7 @@ EOF
 - 下载完成后解压，随便点击一个文件进行安装
 - 重启windows terminal，在默认值--外观那里设置文字
 ![image](https://user-images.githubusercontent.com/42434762/180972268-b6e92b27-9f82-47dd-9d01-b1e277d8d1ae.png)
-- 文字安装和oh-my-pash安装先后都可
+- 文字安装和oh-my-posh安装先后都可
 
 ## 安装配置
 
