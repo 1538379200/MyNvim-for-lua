@@ -22,7 +22,7 @@ EOF
 
 - 在windows商店中下载 windows terminal 和 oh-my-posh
 - 搜索下载PowerShell7，[PowerShell 7 下载](https://github.com/PowerShell/PowerShell)
-- 下载后，使用notepad $profile 编辑配置文件，如果找不到路径，使用```$profile```查看路径，创建路径，再次打开
+- 下载后，使用```notepad $profile``` 编辑配置文件，如果找不到路径，使用```$profile```查看路径，创建路径，再次打开
 - 在$profile文件中输入```oh-my-posh init pwsh | Invoke-Expression```
 - 在PowerShell中输入```Get-PoshThemes```，导入全部主题，导入完成会显示保存的位置
 - 如果放在Program Files (x86)可能会在写入的时候不能识别，如果在这里可以选择将下载的主题放在其他地方
