@@ -45,7 +45,7 @@ EOF
 - ```pip install neovim```安装python扩展
 - 使用```npm i -g [language server]``` 为lsp安装语言服务器，也可以在nvim中使用```:LspInstall [language server]```安装，不知道名字可以去[nvim-lsp-install](https://github.com/williamboman/nvim-lsp-installer#available-lsps)
 查看
-- 进入nvim，```:PackerInstall```或者```:packerSync```安装更新全部插件
+- 进入nvim程序，```:PackerInstall```或者```:PackerSync```安装更新全部插件
 
 
 ## 预览
@@ -60,9 +60,9 @@ EOF
 
 可以通过修改 init.vim中的colorscheme来更改配色
 
-在nvim界面，```:colorscheme```加空格，然后TAB可以在当前选择、查看不同的配色主题(此处为gruvbox)
+在nvim程序界面，```:colorscheme```加空格，然后TAB可以在当前选择、查看不同的配色主题(此处为gruvbox)
 
-修改```lua/baseConfig.lua```中的```background```可以改变light或者drak等模式
+修改```init.vim```中的```background```可以改变light或者drak等模式
 ![image](https://user-images.githubusercontent.com/42434762/180963299-4c2c5e42-e6c9-4668-970b-4ad3f977ac47.png)
 
 ## 键位操作
