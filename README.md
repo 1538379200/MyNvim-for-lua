@@ -24,6 +24,12 @@ EOF
 - 重启PowerShell即可显示
 - 在运行命令中，使用pwsh打开PowerShell 7程序
 
+## 配置terminal字体
+- 在[Nerd Donts](https://www.nerdfonts.com/font-downloads)中下载喜欢的字体，这里使用的```meslo nerd font```
+- 下载完成后解压，随便点击一个文件进行安装
+- 重启windows terminal，在默认值--外观那里设置文字
+![image](https://user-images.githubusercontent.com/42434762/180972268-b6e92b27-9f82-47dd-9d01-b1e277d8d1ae.png)
+- 文字安装和oh-my-pash安装先后都可
 
 ## 安装配置
 
