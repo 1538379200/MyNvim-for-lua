@@ -70,6 +70,7 @@ EOF
 - 便捷安装lsp服务: [lsp-install](https://github.com/williamboman/nvim-lsp-installer)
 - 文件树目录: [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - 代码纠错提示插件: [lsp](https://github.com/neovim/nvim-lspconfig)
+- 代码补全插件: [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - 包管理插件: [packer](https://github.com/wbthomason/packer.nvim)
 - vim可选包管理: [vim-plug](https://github.com/junegunn/vim-plug)
 
