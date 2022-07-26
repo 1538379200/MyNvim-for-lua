@@ -28,3 +28,8 @@
 
 ![image](https://user-images.githubusercontent.com/42434762/180933865-8f63d266-5dcd-43d4-b605-16764dcc1acd.png)
 ![image](https://user-images.githubusercontent.com/42434762/180933925-805f9ec9-c5d7-40bb-adf0-09be44aabd4b.png)
+
+可以通过修改 init.vim中的colorscheme来更改配色
+在nvim界面，```:colorscheme```加空格，然后TAB可以在当前选择、查看不同的配色主题
+![image](https://user-images.githubusercontent.com/42434762/180963299-4c2c5e42-e6c9-4668-970b-4ad3f977ac47.png)
+
