@@ -1,5 +1,14 @@
 # MyNvim-for-lua
 使用lua写的关于nvim的配置文件
+> 在vim文件中编辑lua代码，前面需要加上lua字样，指明lua块
+
+``` lua require(xxx).setup{} ```
+``` 
+lua <<< EOF
+. 
+.
+.
+EOF
 
 ## 配置windows terminal
 > 不要装在自带PowerShell中，会出现报错，不能消除
