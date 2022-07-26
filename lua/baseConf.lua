@@ -9,4 +9,4 @@ vim.o.fileencoding='utf-8'
 vim.o.tabstop = 4
 vim.o.autoread = true
 vim.o.termguicolors = true
-vim.o.background = dark
+-- vim.o.background = light

@@ -42,4 +42,5 @@ use {'vim-airline/vim-airline'}
 use {'vim-airline/vim-airline-themes'}
 use {'mhinz/vim-startify'}
 use {'morhetz/gruvbox'}
+use {'cdelledonne/vim-cmake'}
 end)
