@@ -16,6 +16,7 @@ EOF
 - node.js
 - python
 - git
+- neovim
 
 ## 配置windows terminal
 > 不要装在自带PowerShell中，会出现报错，不能消除
@@ -39,8 +40,8 @@ EOF
 
 ## 安装配置
 
-确保有node.js、python
-
+- 在```C:\Users\<name>\AppData\Local```下创建一个nvim文件夹
+- 使用git clone，将项目放到此处，进入文件夹，将里面的文件、文件夹全部剪切到nvim文件夹下
 - ```pip install neovim```安装python扩展
 - 使用```npm i -g [language server]``` 为lsp安装语言服务器，也可以在nvim中使用```:LspInstall [language server]```安装，不知道名字可以去[nvim-lsp-install](https://github.com/williamboman/nvim-lsp-installer#available-lsps)
 查看
