@@ -11,6 +11,12 @@ lua <<< EOF
 EOF
 ```
 
+## 所需环境工具
+
+- node.js
+- python
+- git
+
 ## 配置windows terminal
 > 不要装在自带PowerShell中，会出现报错，不能消除
 
