@@ -10,7 +10,6 @@ return require('packer').startup(function()
 	use 'L3MON4D3/LuaSnip' -- Snippets plugin
 	use {
 	    "williamboman/nvim-lsp-installer",
-	    "neovim/nvim-lspconfig",
 	}
 	use {
 	    'kyazdani42/nvim-tree.lua',
@@ -43,4 +42,6 @@ use {'vim-airline/vim-airline-themes'}
 use {'mhinz/vim-startify'}
 use {'morhetz/gruvbox'}
 use {'cdelledonne/vim-cmake'}
+use {'karb94/neoscroll.nvim'}
+use {'thinca/vim-quickrun'}
 end)

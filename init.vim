@@ -3,7 +3,7 @@ require('plugins')
 require('lsp')
 require('init_lspconfig')
 require('keymap')
-require('bufferline')
+require('test')
 EOF
 
 " ----------------------------nvim基础配置------------------------------------
@@ -18,7 +18,7 @@ set shiftwidth=4
 set cursorline
 set cursorcolumn
 set showcmd
-set fileencoding='utf-8'
+set fileencoding=utf-8
 set tabstop=4
 set autoread
 set termguicolors
@@ -42,3 +42,11 @@ let g:airline#extensions#battery#enabled = 1
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_theme='solarized'
+
+" 平滑滚动
+lua require('neoscroll').setup()
+
+" set QuickRun 
+nnoremap <F10> <Esc>:QuickRun<CR>
+
+" sfile此文件路径，如果改成%，则是调用命令的文件
