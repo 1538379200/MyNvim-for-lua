@@ -47,6 +47,6 @@ let g:airline_theme='solarized'
 lua require('neoscroll').setup()
 
 " set QuickRun 
-nnoremap <F10> <Esc>:QuickRun<CR>
+" nnoremap <F10> <Esc>:QuickRun<CR>
 
 " sfile此文件路径，如果改成%，则是调用命令的文件
