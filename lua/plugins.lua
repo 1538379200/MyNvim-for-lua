@@ -44,4 +44,8 @@ use {'morhetz/gruvbox'}
 use {'cdelledonne/vim-cmake'}
 use {'karb94/neoscroll.nvim'}
 use {'thinca/vim-quickrun'}
+use {'luochen1990/rainbow'}
+use {'ap/vim-css-color'}
+use {'windwp/nvim-autopairs'}
+use {'tpope/vim-surround'}
 end)
