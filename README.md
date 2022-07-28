@@ -77,6 +77,8 @@ EOF
 - ```F10``` 在python文件中可以直接运行代码，在命令行显示
 - ```ctrl + F10``` 运行python代码，结果显示在terminal
 - ```gcc```快速注释一行代码，选中区域```gc```可以注释选中区域
+- ```space space```，进入符号操作模式，输入任意符号回车，即可将光标所在单词用此符号包裹，space为默认leader按键
+- vim-surround操作快捷键可查看其文档
 
 - 其他操作为vim基础操作，未做改变
 
@@ -94,5 +96,6 @@ EOF
 - rainbow彩虹括号: [rainbow](https://github.com/luochen1990/rainbow)
 - css颜色匹配: [vim-css-color](https://github.com/ap/vim-css-color)
 - 符号补全: [autopaiirs](https://github.com/windwp/nvim-autopairs)
+- 快捷符号替换、添加: [vim-surround](https://github.com/tpope/vim-surround)
 
 
