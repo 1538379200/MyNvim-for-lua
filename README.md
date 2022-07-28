@@ -68,12 +68,22 @@ EOF
 ## 键位操作
 > 键位映射操作可以在```lua/keymap.lua```/```init.vim```中进行修改
 
-- ```ctrl + n``` 可以打开/关闭文件树
+- ```ctrl + n``` 可以打开/关闭文件树，文件树可以按m标记批量操作
 - ```crtl + w + w```/```ctrl + w + [方向键]``` 切换窗口
 - ```Alt + [左右方向键]``` 切换标签
 - ```Alt + ↓``` 选择关闭标签
+- ```ctrl + ↑``` 与ctrl + y相同，向上滚动屏幕
+- ```ctrl + ↓``` 与ctrl + e相同，向下滚动屏幕
+- ```F10``` 在python文件中可以直接运行代码，在命令行显示
+- ```ctrl + F10``` 运行python代码，结果显示在terminal
+- ```gcc```快速注释一行代码，选中区域```gc```可以注释选中区域
+- ```space space```，进入符号操作模式，输入任意符号回车，即可将光标所在单词用此符号包裹，space为默认leader按键
+- vim-surround操作快捷键可查看其文档
 
-## 正在使用插件
+- 其他操作为vim基础操作，未做改变
+
+## 正在使用部分插件
+> 这里只是显示部分使用插件，并不一定是全部的插件，其插件也有其他依赖项
 
 - 标签、状态栏样式插件: [vim-airline](https://github.com/vim-airline/vim-airline)
 - 便捷安装lsp服务: [lsp-install](https://github.com/williamboman/nvim-lsp-installer)
@@ -82,5 +92,10 @@ EOF
 - 代码补全插件: [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - 包管理插件: [packer](https://github.com/wbthomason/packer.nvim)
 - vim可选包管理: [vim-plug](https://github.com/junegunn/vim-plug)
+- gcc批量注释
+- rainbow彩虹括号: [rainbow](https://github.com/luochen1990/rainbow)
+- css颜色匹配: [vim-css-color](https://github.com/ap/vim-css-color)
+- 符号补全: [autopaiirs](https://github.com/windwp/nvim-autopairs)
+- 快捷符号替换、添加: [vim-surround](https://github.com/tpope/vim-surround)
 
 
