@@ -76,6 +76,7 @@ EOF
 - ```ctrl + ↓``` 与ctrl + e相同，向下滚动屏幕
 - ```F10``` 在python文件中可以直接运行代码，在命令行显示
 - ```ctrl + F10``` 运行python代码，结果显示在terminal
+- ```gcc```快速注释一行代码，选中区域```gc```可以注释选中区域
 
 - 其他操作为vim基础操作，未做改变
 
@@ -88,5 +89,6 @@ EOF
 - 代码补全插件: [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - 包管理插件: [packer](https://github.com/wbthomason/packer.nvim)
 - vim可选包管理: [vim-plug](https://github.com/junegunn/vim-plug)
+- gcc批量注释
 
 
