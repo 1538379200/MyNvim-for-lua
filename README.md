@@ -10,6 +10,14 @@ lua <<< EOF
 .
 EOF
 ```
+> 使用python编写vim代码，这些EOF都是标记字符，可以为任意字符
+```python
+python << EOF
+import vim
+
+xxxxx
+EOF
+```
 
 ## 所需环境工具
 
