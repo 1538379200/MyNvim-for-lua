@@ -80,7 +80,8 @@ EOF
 
 - 其他操作为vim基础操作，未做改变
 
-## 正在使用插件
+## 正在使用部分插件
+> 这里只是显示部分使用插件，并不一定是全部的插件，其插件也有其他依赖项
 
 - 标签、状态栏样式插件: [vim-airline](https://github.com/vim-airline/vim-airline)
 - 便捷安装lsp服务: [lsp-install](https://github.com/williamboman/nvim-lsp-installer)
@@ -90,5 +91,8 @@ EOF
 - 包管理插件: [packer](https://github.com/wbthomason/packer.nvim)
 - vim可选包管理: [vim-plug](https://github.com/junegunn/vim-plug)
 - gcc批量注释
+- rainbow彩虹括号: [rainbow](https://github.com/luochen1990/rainbow)
+- css颜色匹配: [vim-css-color](https://github.com/ap/vim-css-color)
+- 符号补全: [autopaiirs](https://github.com/windwp/nvim-autopairs)
 
 
