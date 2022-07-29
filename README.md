@@ -71,6 +71,28 @@ EOF
 - ```home/end```: 开头结尾，可以结合shift进行全选等
 ![image](https://user-images.githubusercontent.com/42434762/181673680-c3b388f2-fe4b-4e25-acc8-0c25cb1ad74b.png)
 
+## windows terminal分屏没有样式处理
+打开配置json文件，在actions中，添加如下代码：
+```json
+{
+  "command":{
+      "action": "splitPane",
+      "split": "horizontal",
+      "splitMode": "duplicate"
+  },
+  "keys": "alt+shift+_"
+},
+{
+  "command":{
+      "action": "splitPane",
+      "split": "vertical",
+      "splitMode": "duplicate"
+  },
+  "keys": "alt+shift+plus"
+}
+```
+> ```duplicate```是分屏获取当前终端的配置加载
+
 
 ## nvim安装配置
 
