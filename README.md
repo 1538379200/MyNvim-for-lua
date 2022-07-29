@@ -156,4 +156,10 @@ EOF
 - 符号补全: [autopaiirs](https://github.com/windwp/nvim-autopairs)
 - 快捷符号替换、添加: [vim-surround](https://github.com/tpope/vim-surround)
 
+## 常见疑问
+- 为什么python代码不适用pynvim编写插件形式
+  - 使用pynvim去编写python插件可能还需要进行上传等操作，编写也比较麻烦，对于比较小的代码块，就直接放在vimscript中进行调用了
+- 为什么下载插件比较慢，有些失败了
+  - 大部分插件都是存在于github之中，所以在国内进行访问，可能比较麻烦
+
 
