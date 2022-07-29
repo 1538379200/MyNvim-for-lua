@@ -1,5 +1,5 @@
 # MyNvim-for-lua
-使用lua写的关于nvim的配置文件
+使用lua写的关于nvim的配置文件，并非完全弃用vimscript，而是结合lua、python、vimscript，编写满足使用需求的编辑器脚本
 > 在vim文件中编辑lua代码，前面需要加上lua字样，指明lua块
 
 ``` lua require(xxx).setup{} ```
