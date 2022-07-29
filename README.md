@@ -69,6 +69,8 @@ EOF
 - ```ctrl``` + ```a```: 全选
 - ```ctrl``` + ```w```: 删除前一个单词
 - ```home/end```: 开头结尾，可以结合shift进行全选等
+![image](https://user-images.githubusercontent.com/42434762/181673680-c3b388f2-fe4b-4e25-acc8-0c25cb1ad74b.png)
+
 
 ## nvim安装配置
 
