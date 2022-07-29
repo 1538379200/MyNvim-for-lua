@@ -72,7 +72,7 @@ EOF
 ![image](https://user-images.githubusercontent.com/42434762/181673680-c3b388f2-fe4b-4e25-acc8-0c25cb1ad74b.png)
 
 ## windows terminal分屏没有样式处理
-打开配置json文件，在actions中，添加如下代码：
+打开配置json文件，在actions中，添加如下代码，替换原来的分屏设置：
 ```json
 {
   "command":{
