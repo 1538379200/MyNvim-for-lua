@@ -46,7 +46,31 @@ EOF
 ![image](https://user-images.githubusercontent.com/42434762/180972268-b6e92b27-9f82-47dd-9d01-b1e277d8d1ae.png)
 - 文字安装和oh-my-posh安装先后都可
 
-## 安装配置
+## windows terminal常用快捷键
+> 完整windows terminal的快捷键和修改，可以去设置中操作查看
+
+- ```alt``` + ```shift``` + ```=+```: 左右分屏
+- ```alt``` + ```shift``` + ```-_```: 上下分屏
+- ```alt``` + ```shift``` + ```D```: 默认分屏(左右分屏)
+- ```alt``` + 方向键: 进行分屏间移动
+- ```alt``` + ```shift``` + 方向键: 进行分屏大小调整
+- ```ctrl``` + ```shift``` + ```W```: 关闭当前分屏，一般直接在terminal内输入```exit```回车关闭
+- ```alt``` + 鼠标滚轮/```+/-```: 放大缩小屏幕字体
+- ```ctrl``` + ```shift``` + 上下方向键: 移动屏幕内容
+- ```ctrl``` + ```shift``` + ```pgup/pgdn```: 上下翻页屏幕内容
+- ```ctrl``` + ```shift``` + ```home/end```: 到顶部和底部
+- ```ctrl``` + ```shift``` + ```C```: 复制，复制粘贴也可以直接用ctrl，但是ctrl+c可能有时候会造成程序关闭或代码程序终止
+- ```ctrl``` + ```shift``` + ```V```: 粘贴
+- ```ctrl``` + ```s```: 暂停屏幕内容输出
+- ```ctrl``` + ```q```: 继续屏幕输出
+光标操作
+- ```ctrl``` + 左右方向键: 调到单词开头
+- ```shift``` + 左右方向键: 区域选中
+- ```ctrl``` + ```a```: 全选
+- ```ctrl``` + ```w```: 删除前一个单词
+- ```home/end```: 开头结尾，可以结合shift进行全选等
+
+## nvim安装配置
 
 - 在```C:\Users\<name>\AppData\Local```下创建一个nvim文件夹
 - 使用git clone，将项目放到nvim文件夹，如果进入nvim文件夹看到的不是```init.vim```等和项目一样的所有文件，则进入MyNvim-for-lua文件夹，将里面的文件、文件夹全部剪切到nvim文件夹下
