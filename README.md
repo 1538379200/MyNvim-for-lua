@@ -1,5 +1,5 @@
 # MyNvim-for-lua
-使用lua写的关于nvim的配置文件
+使用lua写的关于nvim的配置文件，并非完全弃用vimscript，而是结合lua、python、vimscript，编写满足使用需求的编辑器脚本
 > 在vim文件中编辑lua代码，前面需要加上lua字样，指明lua块
 
 ``` lua require(xxx).setup{} ```
@@ -8,6 +8,14 @@ lua <<< EOF
 . 
 .
 .
+EOF
+```
+> 使用python编写vim代码(非插件，vim中编辑)，这些EOF都是标记字符，可以为任意字符
+```python
+python << EOF
+import vim
+
+xxxxx
 EOF
 ```
 
@@ -38,7 +46,55 @@ EOF
 ![image](https://user-images.githubusercontent.com/42434762/180972268-b6e92b27-9f82-47dd-9d01-b1e277d8d1ae.png)
 - 文字安装和oh-my-posh安装先后都可
 
-## 安装配置
+## windows terminal常用快捷键
+> 完整windows terminal的快捷键和修改，可以去设置中操作查看
+
+- ```alt``` + ```shift``` + ```=+```: 左右分屏
+- ```alt``` + ```shift``` + ```-_```: 上下分屏
+- ```alt``` + ```shift``` + ```D```: 默认分屏(左右分屏)
+- ```alt``` + 方向键: 进行分屏间移动
+- ```alt``` + ```shift``` + 方向键: 进行分屏大小调整
+- ```ctrl``` + ```shift``` + ```W```: 关闭当前分屏，一般直接在terminal内输入```exit```回车关闭
+- ```alt``` + 鼠标滚轮/```+/-```: 放大缩小屏幕字体
+- ```ctrl``` + ```shift``` + 上下方向键: 移动屏幕内容
+- ```ctrl``` + ```shift``` + ```pgup/pgdn```: 上下翻页屏幕内容
+- ```ctrl``` + ```shift``` + ```home/end```: 到顶部和底部
+- ```ctrl``` + ```shift``` + ```C```: 复制，复制粘贴也可以直接用ctrl，但是ctrl+c可能有时候会造成程序关闭或代码程序终止
+- ```ctrl``` + ```shift``` + ```V```: 粘贴
+- ```ctrl``` + ```s```: 暂停屏幕内容输出
+- ```ctrl``` + ```q```: 继续屏幕输出
+光标操作
+- ```ctrl``` + 左右方向键: 调到单词开头
+- ```shift``` + 左右方向键: 区域选中
+- ```ctrl``` + ```a```: 全选
+- ```ctrl``` + ```w```: 删除前一个单词
+- ```home/end```: 开头结尾，可以结合shift进行全选等
+![image](https://user-images.githubusercontent.com/42434762/181673680-c3b388f2-fe4b-4e25-acc8-0c25cb1ad74b.png)
+
+## windows terminal分屏没有样式处理
+打开配置json文件，在actions中，添加如下代码，替换原来的分屏设置：
+```json
+{
+  "command":{
+      "action": "splitPane",
+      "split": "horizontal",
+      "splitMode": "duplicate"
+  },
+  "keys": "alt+shift+_"
+},
+{
+  "command":{
+      "action": "splitPane",
+      "split": "vertical",
+      "splitMode": "duplicate"
+  },
+  "keys": "alt+shift+plus"
+}
+```
+> ```duplicate```是分屏获取当前终端的配置加载
+
+
+## nvim安装配置
 
 - 在```C:\Users\<name>\AppData\Local```下创建一个nvim文件夹
 - 使用git clone，将项目放到nvim文件夹，如果进入nvim文件夹看到的不是```init.vim```等和项目一样的所有文件，则进入MyNvim-for-lua文件夹，将里面的文件、文件夹全部剪切到nvim文件夹下
@@ -53,6 +109,8 @@ EOF
 ![image](https://user-images.githubusercontent.com/42434762/181021793-686e883a-0c50-4ead-998e-da8738a2ae2e.png)
 ![image](https://user-images.githubusercontent.com/42434762/180933865-8f63d266-5dcd-43d4-b605-16764dcc1acd.png)
 ![image](https://user-images.githubusercontent.com/42434762/180933925-805f9ec9-c5d7-40bb-adf0-09be44aabd4b.png)
+![image](https://user-images.githubusercontent.com/42434762/181533919-f82cdad7-6e6a-4000-b269-419a38329a01.png)
+
 
 ## 修改配色
 
@@ -70,12 +128,12 @@ EOF
 
 - ```ctrl + n``` 可以打开/关闭文件树，文件树可以按m标记批量操作
 - ```crtl + w + w```/```ctrl + w + [方向键]``` 切换窗口
-- ```Alt + [左右方向键]``` 切换标签
-- ```Alt + ↓``` 选择关闭标签
+- ```space + [左右方向键]``` 切换标签
+- ```space + ↓``` 选择关闭标签
 - ```ctrl + ↑``` 与ctrl + y相同，向上滚动屏幕
 - ```ctrl + ↓``` 与ctrl + e相同，向下滚动屏幕
 - ```F10``` 在python文件中可以直接运行代码，在命令行显示
-- ```ctrl + F10``` 运行python代码，结果显示在terminal
+- ```ctrl + F10``` 运行python或者golang代码，结果显示在terminal(其他语言可在init.vim的python块中添加，golang为```go run xxx```)
 - ```gcc```快速注释一行代码，选中区域```gc```可以注释选中区域
 - ```space space```，进入符号操作模式，输入任意符号回车，即可将光标所在单词用此符号包裹，space为默认leader按键
 - vim-surround操作快捷键可查看其文档
@@ -97,5 +155,11 @@ EOF
 - css颜色匹配: [vim-css-color](https://github.com/ap/vim-css-color)
 - 符号补全: [autopaiirs](https://github.com/windwp/nvim-autopairs)
 - 快捷符号替换、添加: [vim-surround](https://github.com/tpope/vim-surround)
+
+## 常见疑问
+- 为什么python代码不适用pynvim编写插件形式
+  - 使用pynvim去编写python插件可能还需要进行上传等操作，编写也比较麻烦，对于比较小的代码块，就直接放在vimscript中进行调用了
+- 为什么下载插件比较慢，有些失败了
+  - 大部分插件都是存在于github之中，所以在国内进行访问，可能比较麻烦
 
 
