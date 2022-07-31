@@ -20,7 +20,10 @@ set shiftwidth=4
 set cursorline
 set cursorcolumn
 set showcmd
-set fileencoding=utf-8
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+set enc=utf8
+set fencs=utf8,gbk,gb2312,gb18030
+set termencoding=utf-8
 set tabstop=4
 set autoread
 set termguicolors
@@ -108,7 +111,7 @@ window_h = int(height * 0.9)
 buf = vim.api.create_buf(False, True)
 if filetype == 'py':
 	# 运行命令并返回输出结果，这种方式不会在命令行中输出数据
-	msg = vim.command_output(f'!py {filepath}')
+	msg = vim.command_output(f'pyf {filepath}')
 elif filetype == 'go':
 	msg = vim.command_output(f'!go run {filepath}')
 else:
