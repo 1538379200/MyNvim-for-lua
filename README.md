@@ -132,11 +132,12 @@ EOF
 - ```space + ↓``` 选择关闭标签
 - ```ctrl + ↑``` 与ctrl + y相同，向上滚动屏幕
 - ```ctrl + ↓``` 与ctrl + e相同，向下滚动屏幕
-- ```F10``` 在python文件中可以直接运行代码，在命令行显示
-- ```ctrl + F10``` 运行python或者golang代码，结果显示在terminal(其他语言可在init.vim的python块中添加，golang为```go run xxx```)
+- ```F10``` 运行python或者golang代码，在内置terminal中打开，使用i加任意键可退出
+- ```ctrl + F10``` 运行python或者golang代码，使用悬浮窗口显示代码运行结果，:q即可退出窗口，和普通窗口一样
 - ```gcc```快速注释一行代码，选中区域```gc```可以注释选中区域
 - ```space space```，进入符号操作模式，输入任意符号回车，即可将光标所在单词用此符号包裹，space为默认leader按键
 - vim-surround操作快捷键可查看其文档
+
 
 - 其他操作为vim基础操作，未做改变
 
